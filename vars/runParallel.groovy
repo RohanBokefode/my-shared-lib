@@ -1,6 +1,6 @@
 def call() {
     parallel(
-        Maven: { sh 'mvn clean install' },
-        NPM: { sh 'npm install' }
+        Task1: { sh 'echo Running Task 1' },
+        Task2: { sh 'echo Running Task 2' }
     )
 }
